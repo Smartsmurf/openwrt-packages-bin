@@ -1,0 +1,1507 @@
+Package: badblocks
+Version: 1.44.1-1
+Depends: libc, e2fsprogs
+Source: package/utils/e2fsprogs
+License: GPL-2.0
+Section: utils
+Architecture: arm_fa526
+Installed-Size: 10635
+Filename: badblocks_1.44.1-1_arm_fa526.ipk
+Size: 11295
+SHA256sum: 92cecf4a9dee507f19b77dd1c7a2ad2cc7a73f3e246554611b7607e9ec9c78d6
+Description:  Ext2 Filesystem badblocks utility
+
+Package: blkid
+Version: 2.32-1
+Depends: libc, libblkid, libuuid
+Source: package/utils/util-linux
+License: GPL-2.0
+LicenseFiles: COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
+Section: utils
+Architecture: arm_fa526
+Installed-Size: 32124
+Filename: blkid_2.32-1_arm_fa526.ipk
+Size: 32904
+SHA256sum: e68972f5ccf5246e984e9d438be6cf4400caa1e7be716e9ee232c5ab05cf8620
+Description:  The blkid program is the command-line interface to working with the libblkid
+ library.
+
+Package: busybox
+Version: 1.28.3-1
+Depends: libc, libpam, jsonfilter
+Alternatives: 100:/bin/kill:/bin/busybox, 100:/bin/ps:/bin/busybox, 100:/sbin/ip:/bin/busybox, 100:/usr/bin/free:/bin/busybox, 100:/usr/bin/pgrep:/bin/busybox, 100:/usr/bin/top:/bin/busybox, 100:/usr/bin/uptime:/bin/busybox
+Source: package/utils/busybox
+License: GPL-2.0
+LicenseFiles: LICENSE archival/libarchive/bz/LICENSE
+Section: base
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 277283
+Filename: busybox_1.28.3-1_arm_fa526.ipk
+Size: 277287
+SHA256sum: 325a80153a32abd7803e14d3951f44e68c7eead3f643826f501fb092bb20731d
+Description:  The Swiss Army Knife of embedded Linux.
+ It slices, it dices, it makes Julian Fries.
+
+Package: chattr
+Version: 1.44.1-1
+Depends: libc, e2fsprogs
+Source: package/utils/e2fsprogs
+License: GPL-2.0
+Section: utils
+Architecture: arm_fa526
+Installed-Size: 3749
+Filename: chattr_1.44.1-1_arm_fa526.ipk
+Size: 4429
+SHA256sum: e1f60462c2e8b52b5fecd894ff1ac7d92a149ee32ba3ad91e00e390d91d40c45
+Description:  Ext2 Filesystem chattr utility
+
+Package: dnsmasq
+Version: 2.79-3
+Depends: libc, libubus
+Source: package/network/services/dnsmasq
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: net
+Require-User: dnsmasq=453:dnsmasq=453
+Architecture: arm_fa526
+Installed-Size: 108173
+Filename: dnsmasq_2.79-3_arm_fa526.ipk
+Size: 108908
+SHA256sum: e15b0005e0ea5d91025af4126fd6e0311b6f827a522f844cf880722f3f47e4f5
+Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
+
+Package: dropbear
+Version: 2017.75-5
+Depends: libc
+Source: package/network/services/dropbear
+License: MIT
+LicenseFiles: LICENSE libtomcrypt/LICENSE libtommath/LICENSE
+Section: net
+Architecture: arm_fa526
+Installed-Size: 92118
+Filename: dropbear_2017.75-5_arm_fa526.ipk
+Size: 92872
+SHA256sum: 93ad55be98ee36f9c271297e43ca13a8d4c596bc46c109ffe4c1df5cb1707ed1
+Description:  A small SSH2 server/client designed for small memory environments.
+
+Package: e2fsprogs
+Version: 1.44.1-1
+Depends: libc, libuuid, libext2fs
+Source: package/utils/e2fsprogs
+License: GPL-2.0
+Section: utils
+Architecture: arm_fa526
+Installed-Size: 181877
+Filename: e2fsprogs_1.44.1-1_arm_fa526.ipk
+Size: 181964
+SHA256sum: ac54f7a26339ac08882931b3c221b7e36a99aeeb148091d53d46e88741b9ea31
+Description:  This package contains essential ext2 filesystem utilities which consists of
+ e2fsck, mke2fs and most of the other core ext2 filesystem utilities.
+
+Package: ead
+Version: 1
+Depends: libc
+Source: package/network/services/ead
+License: GPL-2.0
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 101968
+Filename: ead_1_arm_fa526.ipk
+Size: 102773
+SHA256sum: 7a368fd9b1420b1cbe5c00b6b421fd3dda77c988fe57fc5ba7b0e9c30df46592
+Description:  Provides remote access to your device even if IP and firewall
+ configuration settings are defunct
+
+Package: ethtool
+Version: 4.15-1
+Depends: libc
+Source: package/network/utils/ethtool
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 30606
+Filename: ethtool_4.15-1_arm_fa526.ipk
+Size: 31350
+SHA256sum: 083ad789df22063080ba2828de92440aa51abfb2f0117222c09c1a39610c72b8
+Description:  ethtool is a small utility for examining and tuning your ethernet-based
+ network interface
+
+Package: firewall
+Version: 2018-04-05-35b3e74a-2
+Depends: libc, libubox, libubus, libuci, libip4tc, libip6tc, libxtables, kmod-ipt-core, kmod-ipt-conntrack, kmod-nf-conntrack6, kmod-ipt-nat
+Source: package/network/config/firewall
+License: ISC
+Section: net
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_fa526
+Installed-Size: 46406
+Filename: firewall_2018-04-05-35b3e74a-2_arm_fa526.ipk
+Size: 47175
+SHA256sum: 5ab059164ac6bed79aff90c5254af0f63cbb9ae9c62271caaeb044aab50c7c1a
+Description:  This package provides a config-compatible C implementation of the UCI firewall.
+
+Package: gdbserver
+Version: 8.0.1-1
+Depends: libc, zlib
+Source: package/devel/gdb
+License: GPL-3.0+
+Section: devel
+Architecture: arm_fa526
+Installed-Size: 147296
+Filename: gdbserver_8.0.1-1_arm_fa526.ipk
+Size: 147756
+SHA256sum: c120219a9a823761747abdd3f38738c066498a5119e35a886ee65edc75dcf966
+Description:  GDBSERVER is a program that allows you to run GDB on a different machine than the
+ one which is running the program being debugged.
+
+Package: iptables
+Version: 1.6.2-1
+Depends: libc, kmod-ipt-core, libip4tc, libip6tc, libxtables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: net
+Architecture: arm_fa526
+Installed-Size: 25706
+Filename: iptables_1.6.2-1_arm_fa526.ipk
+Size: 26423
+SHA256sum: ff33222994d5fe9a671b39bd01691f62a881069a4d7b04c6d5bd21516198d2d5
+Description:  IP firewall administration tool.
+ 
+ Matches:
+ - icmp
+ - tcp
+ - udp
+ - comment
+ - conntrack
+ - limit
+ - mac
+ - mark
+ - multiport
+ - set
+ - state
+ - time
+ 
+ Targets:
+ - ACCEPT
+ - CT
+ - DNAT
+ - DROP
+ - REJECT
+ - LOG
+ - MARK
+ - MASQUERADE
+ - REDIRECT
+ - SET
+ - SNAT
+ - TCPMSS
+ 
+ Tables:
+ - filter
+ - mangle
+ - nat
+ - raw
+ 
+
+Package: jshn
+Version: 2018-04-07-ace64897-1
+Depends: libc, libjson-c, libubox, libblobmsg-json
+Source: package/libs/libubox
+License: ISC
+Section: utils
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 6428
+Filename: jshn_2018-04-07-ace64897-1_arm_fa526.ipk
+Size: 7235
+SHA256sum: e4e4211b0497e88f7a3dbe1f68e5ebee2219707ca82df1095076f19e990a91cb
+Description:  Library for parsing and generating JSON from shell scripts
+
+Package: jsonfilter
+Version: 2018-02-04-c7e938d6-1
+Depends: libc, libubox, libjson-c
+Source: package/utils/jsonfilter
+License: ISC
+Section: base
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_fa526
+Installed-Size: 9703
+Filename: jsonfilter_2018-02-04-c7e938d6-1_arm_fa526.ipk
+Size: 10434
+SHA256sum: 136a34dfc29a9e2bfad5caebf5d72a1dfb75e36e170b3510e7e1e7d7313950db
+Description:  OpenWrt JSON filter utility
+
+Package: kexec-tools
+Version: 2.0.16-1
+Depends: libc, kexec
+Source: package/boot/kexec-tools
+Section: utils
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Architecture: arm_fa526
+Installed-Size: 106
+Filename: kexec-tools_2.0.16-1_arm_fa526.ipk
+Size: 871
+SHA256sum: d191d061ddba1248fb376dd6a2e4a77b373f2a8011996b7d669a0242117ce930
+Description:  kexec is a set of system calls that allows you to load
+ another kernel from the currently executing Linux kernel.
+ The kexec utility allows to load and boot another kernel.
+
+Package: kexec
+Version: 2.0.16-1
+Depends: libc, zlib
+Source: package/boot/kexec-tools
+Section: utils
+Maintainer: Florian Fainelli <florian@openwrt.org>
+Architecture: arm_fa526
+Installed-Size: 31705
+Filename: kexec_2.0.16-1_arm_fa526.ipk
+Size: 32420
+SHA256sum: efd1140ff9d70363f167e48af37d4c9b13340616fd4f7b212907186ff15729c3
+Description:  The kexec utility allows to load and boot another kernel.
+
+Package: lede-keyring
+Version: 2017-01-20-a50b7529-1
+Depends: libc
+Source: package/system/lede-keyring
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: arm_fa526
+Installed-Size: 866
+Filename: lede-keyring_2017-01-20-a50b7529-1_arm_fa526.ipk
+Size: 1641
+SHA256sum: 268a33bc43a939259c08296933e7c059f2602a7f464c7c82648d1e1e9b4e086d
+Description:  The keyring of with the developer using and gpg public keys.
+
+Package: libbfd
+Version: 2.27-1
+Depends: libc, zlib
+Source: package/devel/binutils
+License: GPL-3.0+
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 299772
+Filename: libbfd_2.27-1_arm_fa526.ipk
+Size: 297635
+SHA256sum: 86ace54cc324728a6fb93687294331d48662a3aac22f930b6d60ab655278bc77
+Description:  libbfd
+
+Package: libblkid
+Version: 2.32-1
+Depends: libc, libuuid
+Source: package/utils/util-linux
+License: GPL-2.0
+LicenseFiles: COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 121471
+Filename: libblkid_2.32-1_arm_fa526.ipk
+Size: 122177
+SHA256sum: 039ad47751606783e24b994a80e590b2374ebb0425ff6240ecbebf9649a3cdee
+Description:  The libblkid library is used to identify block devices (disks) as to their
+ content (e.g. filesystem type, partitions) as well as extracting additional
+ information such as filesystem labels/volume names, partitions, unique
+ identifiers/serial numbers...
+
+Package: libblobmsg-json
+Version: 2018-04-07-ace64897-1
+Depends: libc, libjson-c, libubox
+Source: package/libs/libubox
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 3974
+Filename: libblobmsg-json_2018-04-07-ace64897-1_arm_fa526.ipk
+Size: 4681
+SHA256sum: 4a231f4d95e4e9bc97360c9824bf83e5d8fb53ee4e5b17374eab7539aa6d2faa
+Description:  blobmsg <-> json conversion library
+
+Package: libbz2
+Version: 1.0.6-3
+Depends: libc
+Source: package/utils/bzip2
+License: BZIP2
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: arm_fa526
+Installed-Size: 24956
+Filename: libbz2_1.0.6-3_arm_fa526.ipk
+Size: 25573
+SHA256sum: 0f98d396ff1b5b325384af439d7b8c97f9db6bc8ca5669f08c13e869e821f2eb
+Description:  bzip2 is a freely available, patent free, high-quality
+ data compressor. This packages provides libbz2 library.
+
+Package: libcomerr
+Version: 1.44.1-1
+Depends: libc, libuuid
+Source: package/utils/e2fsprogs
+License: GPL-2.0
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 4128
+Filename: libcomerr_1.44.1-1_arm_fa526.ipk
+Size: 4838
+SHA256sum: ea531ff20b8056446c5f658685a97dbb283669549b441dbd491893a53ba4f049
+Description:  This package contains libcom_err, the common error description library
+ bundled with e2fsprogs.
+
+Package: libcurl
+Version: 7.59.0-1
+Depends: libc, libmbedtls
+Source: package/network/utils/curl
+License: MIT
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Imre Kaloz <kaloz@openwrt.org>
+Architecture: arm_fa526
+Installed-Size: 111577
+Filename: libcurl_7.59.0-1_arm_fa526.ipk
+Size: 112197
+SHA256sum: ade0ca8dc5d7617e8f5ef234ef723bd779b922db7c948a27f5630d4a69140364
+Description:  A client-side URL transfer library
+
+Package: libdw
+Version: 0.169-1
+Depends: libc, libelf1, libbz2
+Source: package/libs/elfutils
+License: GPL-3.0+
+LicenseFiles: COPYING COPYING-GPLV2 COPYING-LGPLV3
+Section: libs
+Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
+Architecture: arm_fa526
+Installed-Size: 113041
+Filename: libdw_0.169-1_arm_fa526.ipk
+Size: 113577
+SHA256sum: d200719efec1cec9634f3495db71feba73dfa34693b83d86de5d6a485ad3cbf5
+Description:  ELF manipulation libraries (libdw)
+
+Package: libelf1
+Version: 0.169-1
+Depends: libc, zlib
+Source: package/libs/elfutils
+License: GPL-3.0+
+LicenseFiles: COPYING COPYING-GPLV2 COPYING-LGPLV3
+Section: libs
+Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
+Architecture: arm_fa526
+Installed-Size: 38373
+Filename: libelf1_0.169-1_arm_fa526.ipk
+Size: 39108
+SHA256sum: ec7588340d4417b44fa6480e0646da46399f525f9de6b8e4ea20c5a0c3b3f9a1
+Description:  ELF manipulation libraries (libelf)
+
+Package: libevent2-core
+Version: 2.0.22-1
+Depends: libc
+Source: package/libs/libevent2
+License: BSD-3-Clause
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_fa526
+Installed-Size: 57843
+Filename: libevent2-core_2.0.22-1_arm_fa526.ipk
+Size: 58734
+SHA256sum: afe5ffc93d743e17aa4c0585b4784a13e8241e099af7f13c798b587068618e1b
+Description:  The libevent API provides a mechanism to execute a callback function
+ when a specific event occurs on a file descriptor or after a timeout
+ has been reached. Furthermore, libevent also support callbacks due
+ to signals or regular timeouts.
+ 
+ libevent is meant to replace the event loop found in event driven
+ network servers. An application just needs to call event_dispatch()
+ and then add or remove events dynamically without having to change
+ the event loop.
+ 
+ This package contains the libevent core shared library for the event,
+ buffer & utility functions.
+
+Package: libevent2
+Version: 2.0.22-1
+Depends: libc
+Source: package/libs/libevent2
+License: BSD-3-Clause
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_fa526
+Installed-Size: 101834
+Filename: libevent2_2.0.22-1_arm_fa526.ipk
+Size: 102532
+SHA256sum: bca1f88d20a0d3c1927dddac112f91431f0bab38428b8564401385ca01834ce9
+Description:  The libevent API provides a mechanism to execute a callback function
+ when a specific event occurs on a file descriptor or after a timeout
+ has been reached. Furthermore, libevent also support callbacks due
+ to signals or regular timeouts.
+ 
+ libevent is meant to replace the event loop found in event driven
+ network servers. An application just needs to call event_dispatch()
+ and then add or remove events dynamically without having to change
+ the event loop.
+ 
+ This package contains the libevent shared library historically
+ containing both the core & extra libraries.
+
+Package: libext2fs
+Version: 1.44.1-1
+Depends: libc, libuuid, libblkid, libss, libcomerr
+Source: package/utils/e2fsprogs
+License: GPL-2.0
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 135425
+Filename: libext2fs_1.44.1-1_arm_fa526.ipk
+Size: 135456
+SHA256sum: ac7ae783db246a89124f823cde03848e6bd76be73d1518ae26273af30642e48d
+Description:  libext2fs is a library which can access ext2, ext3 and ext4 filesystems.
+
+Package: libfdisk
+Version: 2.32-1
+Depends: libc, libuuid, libblkid
+Source: package/utils/util-linux
+License: GPL-2.0
+LicenseFiles: COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 163427
+Filename: libfdisk_2.32-1_arm_fa526.ipk
+Size: 163816
+SHA256sum: a8d1f9badf9e1117c816d4470367a943442e4255f0b37ef051529283021a0ece
+Description:  The libfdisk library is used for manipulating with partition tables.
+
+Package: libfuse
+Version: 2.9.7-1
+Depends: libc, kmod-fuse, libpthread
+Source: package/utils/fuse
+License: LGPLv2.1 GPLv2
+LicenseFiles: COPYING.LIB COPYING
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 59579
+Filename: libfuse_2.9.7-1_arm_fa526.ipk
+Size: 59985
+SHA256sum: 603e827dd0bbc0f0e830779dbd374da13c8c02cea137cfbb29912e8ef05867ad
+Description:  FUSE (Filesystem in UserSpacE)
+ This package contains the FUSE shared libraries, needed by other programs.
+ - libfuse
+ - libulockmgr
+
+Package: libip4tc
+Version: 1.6.2-1
+Depends: libc, libxtables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 19280
+Filename: libip4tc_1.6.2-1_arm_fa526.ipk
+Size: 20019
+SHA256sum: 4c52542645be92368ca737e847639fcf234052094ce0bb29586b1b9751cabc8a
+Description:  IPv4 firewall - shared libiptc library
+
+Package: libip6tc
+Version: 1.6.2-1
+Depends: libc, libxtables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 18967
+Filename: libip6tc_1.6.2-1_arm_fa526.ipk
+Size: 19703
+SHA256sum: 3aa3018d5d3cf4d3e1c1a1b8e9a5ecac121db8406179f3dbf8d62b40ee7d786b
+Description:  IPv6 firewall - shared libiptc library
+
+Package: libjson-c
+Version: 0.12.1-1
+Depends: libc
+Source: package/libs/libjson-c
+License: MIT
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 14951
+Filename: libjson-c_0.12.1-1_arm_fa526.ipk
+Size: 15700
+SHA256sum: 5ff1b1aafc66b76c4584d9267a579e8f4947c23dd4867ccba79fe13cd00e3adf
+Description:  This package contains a library for javascript object notation backends.
+
+Package: libjson-script
+Version: 2018-04-07-ace64897-1
+Depends: libc, libubox
+Source: package/libs/libubox
+License: ISC
+Section: utils
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 4742
+Filename: libjson-script_2018-04-07-ace64897-1_arm_fa526.ipk
+Size: 5445
+SHA256sum: 68e4f5c0d9e702f704865c389a23bfefea9a4ac5e8e62828dbe0033a7bc41f9a
+Description:  Minimalistic JSON based scripting engine
+
+Package: libltdl
+Version: 2.4.6-1
+Depends: libc
+Source: package/libs/libtool
+License: GPL-2.0+
+LicenseFiles: COPYING
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 13800
+Filename: libltdl_2.4.6-1_arm_fa526.ipk
+Size: 14485
+SHA256sum: f0f3ae777d148cdffd7a11ff5eaadd63b24da71814549990ec768006ec28d038
+Description:  A generic dynamic object loading library
+
+Package: liblua
+Version: 5.1.5-1
+Depends: libc
+Source: package/utils/lua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_fa526
+Installed-Size: 61020
+Filename: liblua_5.1.5-1_arm_fa526.ipk
+Size: 61585
+SHA256sum: 9d9e6a149e54e69e31c6b7345f91b0db7d12a514e75d7fa25e1efedc975cb25b
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua shared libraries, needed by other programs.
+
+Package: libmbedtls
+Version: 2.8.0-1
+Depends: libc
+Source: package/libs/mbedtls
+License: GPL-2.0+
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 147918
+Filename: libmbedtls_2.8.0-1_arm_fa526.ipk
+Size: 148496
+SHA256sum: 7061f74a3c25af1ed6db871fca448b96f7c4ebcc171ef140929ce7e6b3b27f11
+Description:  The aim of the mbedtls project is to provide a quality, open-source
+ cryptographic library written in C and targeted at embedded systems.
+ This package contains the mbedtls library.
+
+Package: libmount
+Version: 2.32-1
+Depends: libc, libblkid
+Source: package/utils/util-linux
+License: GPL-2.0
+LicenseFiles: COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 129599
+Filename: libmount_2.32-1_arm_fa526.ipk
+Size: 129691
+SHA256sum: dd6bb2fb388d118506eb94378bc4a42676ecf28e9f661a7ada9564f0f3fa46f7
+Description:  The libmount library is used to parse /etc/fstab, /etc/mtab and
+ /proc/self/mountinfo files, manage the mtab file, evaluate mount options...
+
+Package: libncurses
+Version: 6.1-1
+Depends: libc, terminfo
+Provides: libncursesw
+Source: package/libs/ncurses
+License: MIT
+LicenseFiles: README
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 155827
+Filename: libncurses_6.1-1_arm_fa526.ipk
+Size: 154461
+SHA256sum: 281e43e5ec1f74fab25279d3eaea5b2ef59f5907b5238a56ab06765fc71bcc2a
+Description:  Terminal handling library (Unicode)
+
+Package: libnl-tiny
+Version: 0.1-5
+Depends: libc
+Source: package/libs/libnl-tiny
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 12897
+Filename: libnl-tiny_0.1-5_arm_fa526.ipk
+Size: 13626
+SHA256sum: 3a28d357a70e6dd33b14c523469eb54e44a2ed1855850f85f99549d49df46e0e
+Description:  This package contains a stripped down version of libnl
+
+Package: libopcodes
+Version: 2.27-1
+Depends: libc, libbfd
+Source: package/devel/binutils
+License: GPL-3.0+
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 39014
+Filename: libopcodes_2.27-1_arm_fa526.ipk
+Size: 38756
+SHA256sum: 56936f970a4c0bf885454051dcefcf5c13a987e18062345197befe85fba1cf9c
+Description:  libbfd
+
+Package: libopenssl
+Version: 1.0.2o-1
+Depends: libc
+Source: package/libs/openssl
+License: OpenSSL
+LicenseFiles: LICENSE
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 649794
+Filename: libopenssl_1.0.2o-1_arm_fa526.ipk
+Size: 644535
+SHA256sum: 1e84435b0e02ccd4a0b2a684e3d3a4c7c34cafad682e394ce3c3c3d7f0619b38
+Description:  The OpenSSL Project is a collaborative effort to develop a robust,
+ commercial-grade, full-featured, and Open Source toolkit implementing the Secure
+ Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1) protocols as well
+ as a full-strength general purpose cryptography library.
+ This package contains the OpenSSL shared libraries, needed by other programs.
+
+Package: libpcap
+Version: 1.8.1-1
+Depends: libc
+Source: package/libs/libpcap
+License: BSD-3-Clause
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 86788
+Filename: libpcap_1.8.1-1_arm_fa526.ipk
+Size: 87472
+SHA256sum: 1ebef8dbf4de219c8f5ccc9a88449750cefd6ff7c10201dfb155d23648cc19ab
+Description:  This package contains a system-independent library for user-level network packet
+ capture.
+
+Package: libpopt
+Version: 1.16-1
+Depends: libc
+Source: package/libs/popt
+License: MIT
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 17370
+Filename: libpopt_1.16-1_arm_fa526.ipk
+Size: 18061
+SHA256sum: 099d1a15754b610fcad0d03eae96889a3f314cc11cdac57941f2e5286e421edc
+Description:  A command line option parsing library
+
+Package: libreadline
+Version: 7.0-1
+Depends: libc
+Source: package/libs/readline
+License: GPL-3.0
+LicenseFiles: COPYING
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 115175
+Filename: libreadline_7.0-1_arm_fa526.ipk
+Size: 114564
+SHA256sum: 4b13fd2ce943c2fe91535e87bf86324b9feeb5fa1da92ecd2f6c26af09eae50e
+Description:  The Readline library provides a set of functions for use by applications 
+ that allow users to edit command lines as they are typed in. Both Emacs 
+ and vi editing modes are available. The Readline library includes 
+ additional functions to maintain a list of previously-entered command 
+ lines, to recall and perhaps reedit those lines, and perform csh-like 
+ history expansion on previous commands.
+
+Package: librpc
+Version: 2015-11-04-a921e3de-1
+Depends: libc
+Source: package/libs/librpc
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 30103
+Filename: librpc_2015-11-04-a921e3de-1_arm_fa526.ipk
+Size: 30776
+SHA256sum: 3fa4216c35d328ce7660cf7328dd93841e7633e0609558b7e92069eab3eec3ec
+Description:  uClibc RPC library
+
+Package: libsmartcols
+Version: 2.32-1
+Depends: libc, librt
+Source: package/utils/util-linux
+License: GPL-2.0
+LicenseFiles: COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 72624
+Filename: libsmartcols_2.32-1_arm_fa526.ipk
+Size: 73362
+SHA256sum: 201347c3a54d1e8fe33f97080471760b40f015d04d0daf215c7df0fbf45667e8
+Description:  The smartcols library is used to print tables and trees in a pretty way.
+
+Package: libss
+Version: 1.44.1-1
+Depends: libc, libcomerr
+Source: package/utils/e2fsprogs
+License: GPL-2.0
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 8218
+Filename: libss_1.44.1-1_arm_fa526.ipk
+Size: 8956
+SHA256sum: 77ee469d5058b2ef8efded8701001c1e1f276a479901edfe836af58448399346
+Description:  This pacakge contains libss, a command-line interface parsing library
+ bundled with e2fsprogs.
+
+Package: libsysfs
+Version: 2.1.0-2
+Depends: libc
+Source: package/libs/sysfsutils
+License: LGPL-2.1
+LicenseFiles: COPYING cmd/GPL lib/LGPL
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_fa526
+Installed-Size: 11718
+Filename: libsysfs_2.1.0-2_arm_fa526.ipk
+Size: 12500
+SHA256sum: 5198aa7c2e3f37301e0dba62cef6c956a1460c95b8992db211137ced329d768e
+Description:  The library's purpose is to provide a consistant and stable interface for
+ querying system device information exposed through sysfs.
+
+Package: libubox
+Version: 2018-04-07-ace64897-1
+Depends: libc
+Source: package/libs/libubox
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 18424
+Filename: libubox_2018-04-07-ace64897-1_arm_fa526.ipk
+Size: 19129
+SHA256sum: 51ab627cffed24e7c46e637bdd4cb9a6b5f4f44e33a597b71166775929f57b5e
+Description:  Basic utility library
+
+Package: libubus-lua
+Version: 2018-01-16-5bae22eb-1
+Depends: libc, libubus, liblua
+Source: package/system/ubus
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 6957
+Filename: libubus-lua_2018-01-16-5bae22eb-1_arm_fa526.ipk
+Size: 7725
+SHA256sum: 48f7d46e8409dc0233f06ccfa33c3823621db5221e4d17941f03ac7eef9f0258
+Description:  Lua binding for the OpenWrt RPC client
+
+Package: libubus
+Version: 2018-01-16-5bae22eb-1
+Depends: libc, libubox
+Source: package/system/ubus
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 9735
+Filename: libubus_2018-01-16-5bae22eb-1_arm_fa526.ipk
+Size: 10451
+SHA256sum: 03df52dc44580da4e1bdb295e1c71c3579daa47c617caec5307d86af9de8f9fc
+Description:  OpenWrt RPC client library
+
+Package: libuci-lua
+Version: 2018-03-24-5d2bf09e-1
+Depends: libc, libuci, liblua
+Source: package/system/uci
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 6155
+Filename: libuci-lua_2018-03-24-5d2bf09e-1_arm_fa526.ipk
+Size: 6874
+SHA256sum: f6d6a50c88a5d552a62ec58ad49e34911db37fdf4b7e8a4e188f18310c280f3a
+Description:  Lua plugin for UCI
+
+Package: libuci
+Version: 2018-03-24-5d2bf09e-1
+Depends: libc, libubox
+Source: package/system/uci
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 15405
+Filename: libuci_2018-03-24-5d2bf09e-1_arm_fa526.ipk
+Size: 16088
+SHA256sum: f3b7f0922986ba29eaaada8ff3dba5909a6db5948ecbbec6bcb55249965ec692
+Description:  C library for the Unified Configuration Interface (UCI)
+
+Package: libuclient
+Version: 2017-11-02-4b87d831-1
+Depends: libc, libubox
+Source: package/libs/uclient
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 9297
+Filename: libuclient_2017-11-02-4b87d831-1_arm_fa526.ipk
+Size: 10024
+SHA256sum: fd4f73228e5fde2f0a50e7f9e24a274b2909978d1da14dd3a454138459e686c0
+Description:  HTTP/1.1 client library
+
+Package: libunwind
+Version: 1.2.1-2
+Depends: libc
+Source: package/libs/libunwind
+License: X11
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
+Architecture: arm_fa526
+Installed-Size: 53226
+Filename: libunwind_1.2.1-2_arm_fa526.ipk
+Size: 53885
+SHA256sum: ae05ba60fcf60ce49d5b6625df37988f0a521124316d845150b732577cc70787
+Description:  Libunwind defines a portable and efficient C programming interface (API) to determine the call-chain of a program.
+
+Package: libusb-1.0
+Version: 1.0.21-1
+Depends: libc, libpthread, librt
+Source: package/libs/libusb
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 25729
+Filename: libusb-1.0_1.0.21-1_arm_fa526.ipk
+Size: 26433
+SHA256sum: e6443903b79829b9b9a60e4cf1132ddfa1f21d22469f3a577a0b27a15a5e58e0
+Description:  libusb is a C library that gives applications easy access to USB devices on
+ many different operating systems.
+
+Package: libusb-compat
+Version: 0.1.5-1
+Depends: libc, libusb-1.0
+Source: package/libs/libusb-compat
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 5981
+Filename: libusb-compat_0.1.5-1_arm_fa526.ipk
+Size: 6757
+SHA256sum: 78118ef2aa19b50710625917ef9d69a9e2fa162eb8f763d17aa740fbd9ce83d6
+Description:  libusb is a C library that gives applications easy access to USB devices on
+ many different operating systems.
+
+Package: libustream-openssl
+Version: 2016-07-02-ec80adaa-2
+Depends: libc, libubox, libopenssl
+Source: package/libs/ustream-ssl
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 3671
+Filename: libustream-openssl_2016-07-02-ec80adaa-2_arm_fa526.ipk
+Size: 4380
+SHA256sum: d196f8b7dc522be069a370a97b92c68b939797a3b25f0e6be6e0a263374168c7
+Description:  ustream SSL Library (openssl)
+
+Package: libuuid
+Version: 2.32-1
+Depends: libc, librt
+Source: package/utils/util-linux
+License: GPL-2.0
+LicenseFiles: COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 11212
+Filename: libuuid_2.32-1_arm_fa526.ipk
+Size: 12121
+SHA256sum: 652a5bd7c2c95cbe3b67555a6705f5ccd0af81769ee6cc73da0a8e7ad4278770
+Description:  The UUID library is used to generate unique identifiers for objects
+ that may be accessible beyond the local system. This library
+ generates UUIDs compatible with those created by the Open Software
+ Foundation (OSF) Distributed Computing Environment (DCE) utility.
+
+Package: libxtables
+Version: 1.6.2-1
+Depends: libc
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 40701
+Filename: libxtables_1.6.2-1_arm_fa526.ipk
+Size: 41467
+SHA256sum: 5aa710b345b5bd174cb5bd5a387eeb6d202f6da6754df879a56386ec011f0721
+Description:  IPv4/IPv6 firewall - shared xtables library
+
+Package: linux-atm
+Version: 2.5.2-5
+Depends: libc
+Source: package/network/utils/linux-atm
+License: GPL-2.0+
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 15801
+Filename: linux-atm_2.5.2-5_arm_fa526.ipk
+Size: 16420
+SHA256sum: 6c92f92bdba48f3f524890de88cb3ec495a536f8ffff84dc0b77c697d390d083
+Description:  This package contains a library for accessing the Linux ATM subsystem.
+
+Package: logd
+Version: 2018-02-14-128bc35f-1
+Depends: libc, libubox, libubus, libblobmsg-json
+Source: package/system/ubox
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: arm_fa526
+Installed-Size: 11008
+Filename: logd_2018-02-14-128bc35f-1_arm_fa526.ipk
+Size: 11749
+SHA256sum: 35e7ef48b61cbd43e54ae89d061e20a6b82379fb78e3d7fc0e92f635fdc38f41
+Description:  OpenWrt system log implementation
+
+Package: lsattr
+Version: 1.44.1-1
+Depends: libc, e2fsprogs
+Source: package/utils/e2fsprogs
+License: GPL-2.0
+Section: utils
+Architecture: arm_fa526
+Installed-Size: 3044
+Filename: lsattr_1.44.1-1_arm_fa526.ipk
+Size: 3709
+SHA256sum: 35204de927dc57fd507e09995267f3d71ccf3d847971976bf8e3e101f0bd8964
+Description:  Ext2 Filesystem lsattr utility
+
+Package: lua
+Version: 5.1.5-1
+Depends: libc, liblua
+Source: package/utils/lua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: lang
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_fa526
+Installed-Size: 4904
+Filename: lua_5.1.5-1_arm_fa526.ipk
+Size: 5721
+SHA256sum: b6c9ee253eae32cb4e9e42788703a0d5e2b671f72835bde4cbc900f4e374fe04
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua language interpreter.
+
+Package: mdadm
+Version: 4.0-4
+Depends: libc, libpthread, kmod-md-mod, kmod-md-raid0, kmod-md-raid10, kmod-md-raid1
+Source: package/utils/mdadm
+Section: utils
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 156523
+Filename: mdadm_4.0-4_arm_fa526.ipk
+Size: 157231
+SHA256sum: 2b4243cd85bae3b5df2cedfc9f56d24b72a22cae0fc724de860ef33a15a157a3
+Description:  A tool for managing Linux Software RAID arrays.
+ RAID 0, 1 and 10 support included.
+ If you need RAID 4,5 or 6 functionality please
+ install kmod-md-raid456 .
+
+Package: mtd
+Version: 21
+Depends: libc, libubox
+Source: package/system/mtd
+License: GPL-2.0+
+Section: utils
+Architecture: arm_fa526
+Installed-Size: 13436
+Filename: mtd_21_arm_fa526.ipk
+Size: 14145
+SHA256sum: 233bf00d3100b78e2adba923f337004b8501c94b84023e96914a4a4204aa78ac
+Description:  This package contains an utility useful to upgrade from other firmware or 
+ older OpenWrt releases.
+
+Package: netifd
+Version: 2018-04-03-3dc8c916-1
+Depends: libc, libuci, libnl-tiny, libubus, ubus, ubusd, jshn, libubox
+Source: package/network/config/netifd
+License: GPL-2.0
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 67441
+Filename: netifd_2018-04-03-3dc8c916-1_arm_fa526.ipk
+Size: 68143
+SHA256sum: 6d291a32caa2d8e6dfca878357da89ce16769aaaf6f3c9f0f1f6dc89075d9de5
+Description:  OpenWrt Network Interface Configuration Daemon
+
+Package: objdump
+Version: 2.27-1
+Depends: libc, libopcodes
+Source: package/devel/binutils
+License: GPL-3.0+
+Section: devel
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 131215
+Filename: objdump_2.27-1_arm_fa526.ipk
+Size: 131632
+SHA256sum: 11350f9c9508930957d09ffd7ffa4897065b717b024b46b6eff709462d2701af
+Description:  objdump
+
+Package: odhcp6c
+Version: 2018-05-04-474b5a3a-11
+Depends: libc, libubox
+Source: package/network/ipv6/odhcp6c
+License: GPL-2.0
+Section: net
+Maintainer: Hans Dedecker <dedeckeh@gmail.com>
+Architecture: arm_fa526
+Installed-Size: 25445
+Filename: odhcp6c_2018-05-04-474b5a3a-11_arm_fa526.ipk
+Size: 26195
+SHA256sum: e07c67a7e888d028ee115741c4130a6a2c4a3bf422d4e4a1dc16f7e0cf95a418
+Description:  Embedded DHCPv6-client for OpenWrt
+
+Package: odhcpd-ipv6only
+Version: 1.5-1
+Depends: libc, libubox, libuci, libubus, libnl-tiny
+Source: package/network/services/odhcpd
+License: GPL-2.0
+Section: net
+Maintainer: Hans Dedecker <dedeckeh@gmail.com>
+Architecture: arm_fa526
+Installed-Size: 31354
+Filename: odhcpd-ipv6only_1.5-1_arm_fa526.ipk
+Size: 32244
+SHA256sum: 6bc143720c826f079ab48858780d0073950f070de9074b1069a01a1e4998944a
+Description:  odhcpd is a daemon for serving and relaying IP management protocols to
+ configure clients and downstream routers. It tries to follow the RFC 6204
+ requirements for IPv6 home routers.
+ 
+ This is a variant providing server services for RA, stateless and stateful
+ DHCPv6,  prefix delegation and can be used to relay RA, DHCPv6 and NDP between
+ routed (non-bridged) interfaces in case no delegated prefixes are available.
+
+Package: openssl-util
+Version: 1.0.2o-1
+Depends: libc, libopenssl
+Source: package/libs/openssl
+License: OpenSSL
+LicenseFiles: LICENSE
+Section: utils
+Architecture: arm_fa526
+Installed-Size: 217651
+Filename: openssl-util_1.0.2o-1_arm_fa526.ipk
+Size: 216419
+SHA256sum: 22ed79997273fb49f31642c3266aa0eab926dedcc2a18f04a87e6392e5e44261
+Description:  The OpenSSL Project is a collaborative effort to develop a robust,
+ commercial-grade, full-featured, and Open Source toolkit implementing the Secure
+ Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1) protocols as well
+ as a full-strength general purpose cryptography library.
+ This package contains the OpenSSL command-line utility.
+
+Package: openvpn-easy-rsa
+Version: 3.0.1-1
+Depends: libc, openssl-util
+Source: package/network/services/openvpn-easy-rsa
+License: GPL-2.0
+Section: net
+Architecture: arm_fa526
+Installed-Size: 16645
+Filename: openvpn-easy-rsa_3.0.1-1_arm_fa526.ipk
+Size: 17413
+SHA256sum: a5206d26188b28d8978ec29cf9eb4b1fd6504a93323107d57cdff44721fb929d
+Description:  CLI utility to build and manage a PKI CA.
+
+Package: opkg
+Version: 2017-12-07-3b417b9f-2
+Depends: libc, uclient-fetch, libpthread, libubox
+Source: package/system/opkg
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: base
+Essential: yes
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_fa526
+Installed-Size: 66058
+Filename: opkg_2017-12-07-3b417b9f-2_arm_fa526.ipk
+Size: 66979
+SHA256sum: bf7bd973dcbd693b5fc5d6fa35ae6712b43118f185d1b1dbbbac19533644d0ab
+Description:  Lightweight package management system
+ opkg is the opkg Package Management System, for handling
+ installation and removal of packages on a system. It can
+ recursively follow dependencies and download all packages
+ necessary to install a particular package.
+ 
+ opkg knows how to install both .ipk and .deb packages.
+
+Package: procd
+Version: 2018-03-28-dfb68f85-1
+Depends: libc, ubusd, ubus, libjson-script, ubox, libubox, libubus
+Source: package/system/procd
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: arm_fa526
+Installed-Size: 42867
+Filename: procd_2018-03-28-dfb68f85-1_arm_fa526.ipk
+Size: 43353
+SHA256sum: 5cd89e09ee07deb10d718780ffedaed096b648aa7eb8d2e645295ef0861c2cc7
+Description:  OpenWrt system process manager
+
+Package: resize2fs
+Version: 1.44.1-1
+Depends: libc, e2fsprogs
+Source: package/utils/e2fsprogs
+License: GPL-2.0
+Section: utils
+Architecture: arm_fa526
+Installed-Size: 25783
+Filename: resize2fs_1.44.1-1_arm_fa526.ipk
+Size: 26337
+SHA256sum: 8c702bc10d7a043c8661d353fb5ff97aa0c863ceb9e9d40e9baaf6ef1ece52eb
+Description:  Ext2 Filesystem resize utility
+
+Package: resolveip
+Version: 2
+Depends: libc
+Source: package/network/utils/resolveip
+License: GPL-2.0
+Section: utils
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_fa526
+Installed-Size: 2070
+Filename: resolveip_2_arm_fa526.ipk
+Size: 2943
+SHA256sum: cfb5608d50b55e59fffab8495bdf5cbc6e52b577d6e0e202834122d9c6e57422
+Description:  This package contains the small resolveip utility which
+ can be used by scripts to turn host names into numeric
+ IP addresses. It supports IPv4 and IPv6 resolving and
+ has a configurable timeout to guarantee a certain maximum
+ runtime in case of slow or defunct DNS servers.
+
+Package: rpcd
+Version: 2017-12-07-cfe1e75c-1
+Depends: libc, libubus, libubox, libuci, libblobmsg-json
+Source: package/system/rpcd
+License: ISC
+Section: utils
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_fa526
+Installed-Size: 18520
+Filename: rpcd_2017-12-07-cfe1e75c-1_arm_fa526.ipk
+Size: 19280
+SHA256sum: 8faaf60b4a93a347143336ac1c7fdc2535ecc2b06a0c87321f3ce615b046daae
+Description:  This package provides the UBUS RPC backend server to expose various
+ functionality to frontend programs via JSON-RPC.
+
+Package: samba36-server
+Version: 3.6.25-10
+Depends: libc
+Source: package/network/services/samba36
+License: GPL-3.0
+LicenseFiles: COPYING
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 894079
+Filename: samba36-server_3.6.25-10_arm_fa526.ipk
+Size: 877948
+SHA256sum: 5c3cc968e4e9ccb6d13d9e8dfadb6bf4f01e965434535ae84a14c75cce0fd4d9
+Description:  The Samba software suite is a collection of programs that implements the
+ SMB protocol for UNIX systems, allowing you to serve files and printers to
+ Windows, NT, OS/2 and DOS clients. This protocol is sometimes also referred
+ to as the LanManager or Netbios protocol.
+
+Package: sfdisk
+Version: 2.32-1
+Depends: libc, libblkid, libfdisk, libsmartcols, libncursesw
+Source: package/utils/util-linux
+License: GPL-2.0
+LicenseFiles: COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
+Section: utils
+Architecture: arm_fa526
+Installed-Size: 38682
+Filename: sfdisk_2.32-1_arm_fa526.ipk
+Size: 39319
+SHA256sum: 17adde8a114e52a68b3c09e4585d7496b6420f503a89504fb6226184428db816
+Description:  list the size of a partition, list the partitions on a device, check the
+ partitions on a device and repartition a device
+
+Package: strace
+Version: 4.20-1
+Depends: libc
+Source: package/devel/strace
+License: BSD-3c
+LicenseFiles: COPYRIGHT
+Section: utils
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 192414
+Filename: strace_4.20-1_arm_fa526.ipk
+Size: 192708
+SHA256sum: 845355876e018fa17014063128b23a4ec4a7b422cb22f2b11bd4bd415615bd3a
+Description:  A useful diagnostic, instructional, and debugging tool. Allows you to track what
+ system calls a program makes while it is running.
+
+Package: sysfsutils
+Version: 2.1.0-2
+Depends: libc, libsysfs
+Source: package/libs/sysfsutils
+License: LGPL-2.1
+LicenseFiles: COPYING cmd/GPL lib/LGPL
+Section: utils
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_fa526
+Installed-Size: 7550
+Filename: sysfsutils_2.1.0-2_arm_fa526.ipk
+Size: 8330
+SHA256sum: 59a797df6b8533c49904f82e58d147046661088c3ae613bd8ca0d5e6365992b7
+Description:  A utility built upon libsysfs that lists devices by bus, class, and topology.
+
+Package: tcpdump
+Version: 4.9.2-1
+Depends: libc, libpcap
+Source: package/network/utils/tcpdump
+License: BSD-3-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 333226
+Filename: tcpdump_4.9.2-1_arm_fa526.ipk
+Size: 333513
+SHA256sum: c3d544d2108d444befd2d1fcd367c6244c862db1e89bbe195063bb703d314b07
+Description:  Network monitoring and data acquisition tool
+
+Package: terminfo
+Version: 6.1-1
+Depends: libc
+Source: package/libs/ncurses
+License: MIT
+LicenseFiles: README
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 6236
+Filename: terminfo_6.1-1_arm_fa526.ipk
+Size: 6888
+SHA256sum: 8d4a9988afebf730f65214a2c073565a6df54065a5c72b3b727c81a04c87bfd8
+Description:  Terminal Info Database (ncurses)
+
+Package: tune2fs
+Version: 1.44.1-1
+Depends: libc, e2fsprogs
+Source: package/utils/e2fsprogs
+License: GPL-2.0
+Section: utils
+Architecture: arm_fa526
+Installed-Size: 39737
+Filename: tune2fs_1.44.1-1_arm_fa526.ipk
+Size: 40281
+SHA256sum: cf9ecef0023f6d6ae308388929e9ee5e2f6a603919a03063f7bdcc877b31d405
+Description:  Ext2 Filesystem tune utility
+
+Package: ubox
+Version: 2018-02-14-128bc35f-1
+Depends: libc, libubox, ubusd, ubus, libubus, libuci
+Source: package/system/ubox
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: arm_fa526
+Installed-Size: 15918
+Filename: ubox_2018-02-14-128bc35f-1_arm_fa526.ipk
+Size: 16607
+SHA256sum: ccacd1ffda3f8c08c0969c72402bf9f73db8ade61928a26f1d12872f2a028c2b
+Description:  OpenWrt system helper toolbox
+
+Package: ubus
+Version: 2018-01-16-5bae22eb-1
+Depends: libc, libubus, libblobmsg-json, ubusd
+Source: package/system/ubus
+License: LGPL-2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 5863
+Filename: ubus_2018-01-16-5bae22eb-1_arm_fa526.ipk
+Size: 6619
+SHA256sum: ebd0ee133169b55e12c211cbe7ea378e4fd07d3cbf1d13baa29bc5c1e845268a
+Description:  OpenWrt RPC client utility
+
+Package: ubusd
+Version: 2018-01-16-5bae22eb-1
+Depends: libc, libubox, libblobmsg-json
+Source: package/system/ubus
+License: LGPL-2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 10892
+Filename: ubusd_2018-01-16-5bae22eb-1_arm_fa526.ipk
+Size: 11628
+SHA256sum: 3f47c457e04e335643c52044dc7f6cced5574f24be609876c348fc2298433618
+Description:  OpenWrt RPC daemon
+
+Package: uci
+Version: 2018-03-24-5d2bf09e-1
+Depends: libc, libuci
+Source: package/system/uci
+License: LGPL-2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 7304
+Filename: uci_2018-03-24-5d2bf09e-1_arm_fa526.ipk
+Size: 8077
+SHA256sum: 1230a0caba7407c04c2fbea038f6a9e20ef43c3a6ffca273eefece0fa1948a7d
+Description:  Utility for the Unified Configuration Interface (UCI)
+
+Package: uclient-fetch
+Version: 2017-11-02-4b87d831-1
+Depends: libc, libuclient
+Source: package/libs/uclient
+License: ISC
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 7726
+Filename: uclient-fetch_2017-11-02-4b87d831-1_arm_fa526.ipk
+Size: 8378
+SHA256sum: 7295bbbbed3f5ae1b0f89c3a0138827634f337609dbd8f8d3241848d18eb8ee0
+Description:  Tiny wget replacement using libuclient
+
+Package: uhttpd-mod-lua
+Version: 2017-11-04-a235636a-1
+Depends: libc, uhttpd, liblua
+Source: package/network/services/uhttpd
+License: ISC
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 3895
+Filename: uhttpd-mod-lua_2017-11-04-a235636a-1_arm_fa526.ipk
+Size: 4719
+SHA256sum: cae431f1719d969c138088feea5b6ae894f28b617706601b9c31686224e1677f
+Description:  The Lua plugin adds a CGI-like Lua runtime interface to uHTTPd.
+
+Package: uhttpd-mod-ubus
+Version: 2017-11-04-a235636a-1
+Depends: libc, uhttpd, libubus, libblobmsg-json
+Source: package/network/services/uhttpd
+License: ISC
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 6025
+Filename: uhttpd-mod-ubus_2017-11-04-a235636a-1_arm_fa526.ipk
+Size: 6833
+SHA256sum: dd17b3c50743fab9b882e76f912eeb1fcd4c1792093c76f1cc5208066300aa86
+Description:  The ubus plugin adds a HTTP/JSON RPC proxy for ubus and publishes the
+ session.* namespace and procedures.
+
+Package: uhttpd
+Version: 2017-11-04-a235636a-1
+Depends: libc, libubox, libblobmsg-json, libjson-script
+Source: package/network/services/uhttpd
+License: ISC
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 23956
+Filename: uhttpd_2017-11-04-a235636a-1_arm_fa526.ipk
+Size: 24796
+SHA256sum: a24d570e79597b923031262a19fbf7d25c55034e00b0ba4dd96390f2cda87b7d
+Description:  uHTTPd is a tiny single threaded HTTP server with TLS, CGI and Lua
+ support. It is intended as a drop-in replacement for the Busybox
+ HTTP daemon.
+
+Package: usb-modeswitch
+Version: 2017-12-19-f40f84c2-1
+Depends: libc, libubox, libblobmsg-json, libusb-1.0
+Source: package/utils/usbmode
+License: GPL-2.0
+Section: utils
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 12953
+Filename: usb-modeswitch_2017-12-19-f40f84c2-1_arm_fa526.ipk
+Size: 13682
+SHA256sum: c814376f1f3fae768d81228f491d7fd0b5ef1434a11d38b66ef0722cdbd6b515
+Description:  USB mode switching utility
+
+Package: usbutils
+Version: 007-7
+Depends: libc, libusb-1.0, librt, libpthread
+Source: package/utils/usbutils
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: utils
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 239771
+Filename: usbutils_007-7_arm_fa526.ipk
+Size: 240290
+SHA256sum: a15db0b1d676e74fbbee12d39e63a9ae9ee6bbeffc35c475202beb1f536fdba5
+Description:  USB devices listing utilities
+
+Package: usign
+Version: 2015-07-04-ef641914-1
+Depends: libc, libubox
+Source: package/system/usign
+License: ISC
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_fa526
+Installed-Size: 10685
+Filename: usign_2015-07-04-ef641914-1_arm_fa526.ipk
+Size: 11451
+SHA256sum: f5cacbc0266bd2a6174ba8af9491fc5d72938702746e514b3fe2ab6308279dc0
+Description:  OpenWrt signature verification utility
+
+Package: uuidgen
+Version: 2.32-1
+Depends: libc, libuuid
+Source: package/utils/util-linux
+License: GPL-2.0
+LicenseFiles: COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
+Section: utils
+Architecture: arm_fa526
+Installed-Size: 3984
+Filename: uuidgen_2.32-1_arm_fa526.ipk
+Size: 4855
+SHA256sum: f83d19c5f2f08c8c3459750540d48163cc83afd867935dcf6370a60f0c87e7ff
+Description:  The uuidgen program creates (and prints) a new universally unique identifier
+ (UUID) using the libuuid library. The new UUID can reasonably be considered
+ unique among all UUIDs created on the local system, and among UUIDs created on
+ other systems in the past and in the future.
+
+Package: zlib
+Version: 1.2.11-2
+Depends: libc
+Source: package/libs/zlib
+License: Zlib
+LicenseFiles: README
+Section: libs
+Architecture: arm_fa526
+Installed-Size: 41011
+Filename: zlib_1.2.11-2_arm_fa526.ipk
+Size: 41779
+SHA256sum: b40bedbd312312cca4edff711aab64ad094fd1f13a7e27ec818ae000695a8be3
+Description:  zlib is a lossless data-compression library.
+ This package includes the shared library.
+
